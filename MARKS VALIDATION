@@ -1,0 +1,55 @@
+col = "HITS"
+
+class AIML:
+    dept = "artificial"
+
+    def set_dim(self, a, b, c, d):
+        self.m1 = a
+        self.m2 = b
+        self.m3 = c
+        self.name = d
+
+    def display(self):
+        print("1. Name:", self.name)
+        print("2. Average:", (self.m1 + self.m2 + self.m3) // 3)
+        print("3. Dept:", AIML.dept)
+        print("4. College:", col)
+
+
+class CSE:
+    dept = "computer"
+
+    def set_dim(self, a, b, c, d):
+        self.m1 = a
+        self.m2 = b
+        self.m3 = c
+        self.name = d
+
+    def display(self):
+        print("1. Name:", self.name)
+        print("2. Average:", (self.m1 + self.m2 + self.m3) // 3)
+        print("3. Dept:", CSE.dept)
+        print("4. College:", col)
+
+
+s1 = AIML()
+s2 = AIML()
+c1 = CSE()
+c2 = CSE()
+
+s1.set_dim(30, 40, 50, "John")
+s2.set_dim(50, 60, 80, "Hari")
+
+s1.display()
+print()
+
+s2.display()
+print()
+
+c1.set_dim(50, 80, 70, "Sarathi")
+c2.set_dim(60, 80, 90, "Santhosh")
+
+c1.display()
+print()
+
+c2.display()
