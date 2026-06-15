@@ -1,7 +1,6 @@
 def missing_number(nums):
     n = len(nums)
-
-    x = n * (n + 1) // 2
+    x = (n * (n + 1))// 2
     y = 0
 
     for i in nums:
