@@ -1,0 +1,11 @@
+class Solution(object):
+    def groupAnagrams(self, strs):
+        d={}
+        for i in strs:
+            x=sorted(i)
+            y=" ".join(x)
+            if y not in d:
+                d[y]=[]
+            d[y].append(i)
+        return list(d.values())    
+
